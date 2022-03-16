@@ -1,0 +1,306 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: "PT Serif Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("PT Serif"),
+    url("fonts/PTSerif-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PT Serif BoldItalic";
+    font-style: italic;
+    font-weight: 700;
+    src: local("PT Serif"),
+    url("fonts/PTSerif-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PT Serif Italic";
+    font-style: italic;
+    font-weight: 400;
+    src: local("PT Serif"),
+    url("fonts/PTSerif-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: 400;
+    src: local("PT Serif"),
+    url("fonts/PTSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PT Sans Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("PT Sans"),
+    url("fonts/PTSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PT Sans BoldItalic";
+    font-style: italic;
+    font-weight: 700;
+    src: local("PT Sans"),
+    url("fonts/PTSans-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PT Sans Italic";
+    font-style: italic;
+    font-weight: 400;
+    src: local("PT Sans"),
+    url("fonts/PTSans-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("PT Sans"),
+    url("fonts/PTSans-Regular.ttf") format("truetype");
+}
+
+body{
+    margin: 0;
+    background: #F4F1EE;
+}
+
+.content-wrapper{
+    margin: 0 80px;
+}
+
+
+/*HEADER*/
+.header{
+    width: 100%;
+    height: 117px;
+    background: 0;
+}
+
+.header-wrapper{
+    width: available;
+    height: 117px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo{
+    width: 160px;
+    height: 57px;
+}
+
+.header-logo_link{
+    height: 57px;
+    margin-left: 6px;
+}
+
+.header-nav{
+    width: 51%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav_link{
+    font-family: "PT Serif", serif;
+    color: #000;
+    font-size:1.5em;
+    line-height: 31.8px;
+    text-decoration: none;
+}
+
+.active{
+    color: #A67F50;
+
+}
+
+.header-nav_link:hover,
+.header-nav_link:focus,
+.header-nav_link:active{
+    color:#A67F50;
+    cursor: grab;
+}
+
+/*HEADER END*/
+
+/*MAIN*/
+.first-block{
+    margin-top: 10px;
+}
+
+.first-block-wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.about-pic{
+    width: 570px;
+    height: 452px;
+    grid-column: 1/3;
+    grid-row: 2/8;
+    z-index: 1;
+}
+
+.text-bg{
+    width: 964px;
+    height: 581px;
+    background: rgba(242, 207, 165, 0.5);
+    grid-column: 2/5;
+    grid-row: 1/9;
+    padding: 81px 35px 81px 344px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: "PT Sans", sans-serif;
+    font-size: 1.5rem;
+}
+
+.text-bg p{
+    margin: 0;
+}
+
+.about-title{
+    font-family: "PT Serif Bold", serif;
+    font-size: 1.7rem;
+}
+
+.about-fact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-fact p{
+    width: 205px;
+    margin-right: 164px;
+}
+
+.about-fact p:last-child{
+    margin-right: 0;
+}
+
+span{
+    font-family: "PT Serif Italic", serif;
+    font-size: 2.1rem;
+
+}
+
+.second-block{
+    
+}
+/*END MAIN*/
+
+
+/*FOOTER*/
+
+.footer{
+    width:100%;
+    height: 240px;
+    background: #012E42;
+    font-family: "PT Sans",sans-serif;
+    color: #fff;
+    margin-top: 70px;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 240px;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-nav_link{
+    font-family: "PT Sans",sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 17px;
+}
+
+.footer-nav_link:first-child{
+    font-family: "PT Sans Bold", sans-serif;
+}
+
+.footer-nav_link:last-child{
+    margin-bottom: 0;
+}
+
+.web-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 68px;
+}
+
+.web-link{
+    width: 60px;
+    height: 60px;
+    margin-left: 54px;
+}
+
+.web-link:first-child{
+    margin-left: 0;
+}
+
+#twitter{
+    background: url("assets/icon_twit.png");
+}
+
+#inst{
+    background: url("assets/icon_instagram.png");
+}
+
+#facebook{
+    background: url("assets/icon_facebook.png");
+}
+
+.footer-logo_link{
+    height: 53.57px;
+}
+
+.footer-logo{
+    width: 150px;
+    height: 53.57px;
+}
+
+.footer-logo_link:hover,
+.footer-logo_link:active{
+    cursor: grab;
+}
+
+.add-inf{
+    width: 194px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.add-inf li{
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+
+/*FOOTER END*/
