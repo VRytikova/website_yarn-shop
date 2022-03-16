@@ -265,7 +265,7 @@ body{
     height: 299px;
     background: url("assets/needle_bg.png");
     grid-column: 1/15;
-    grid-row: 15/25;
+    grid-row: 15/24;
 }
 
 .magazine-card{
@@ -277,7 +277,17 @@ body{
 }
 
 .second-block_link{
-    display: none;
+    width: 310px;
+    height: 48px;
+    text-decoration: none;
+    color: #000;
+    font: 2.2rem "PT Serif", serif;
+    grid-column: 18/30;
+    grid-row: 23/25;
+}
+
+.second-block_link:hover{
+    color: #A67F50;
 }
 
 /*MAIN END*/
