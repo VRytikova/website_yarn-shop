@@ -331,6 +331,14 @@ span{
     margin-left: 54px;
 }
 
+.web-link:hover{
+    opacity: 70%;
+}
+
+.footer-nav_link:hover{
+    opacity: 70%;
+}
+
 .web-link:first-child{
     margin-left: 0;
 }

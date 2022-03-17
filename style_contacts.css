@@ -304,6 +304,14 @@ body{
     margin-left: 0;
 }
 
+.web-link:hover{
+    opacity: 70%;
+}
+
+.footer-nav_link:hover{
+    opacity: 70%;
+}
+
 #twitter{
     background: url("assets/icon_twit.png");
 }

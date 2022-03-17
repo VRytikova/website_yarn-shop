@@ -258,6 +258,12 @@ body{
     background: url("assets/yarn_bg.png");
     grid-column: 1/14;
     grid-row: 1/14;
+    background-size: 552px 429px;
+    transition: background-size 1.2s;
+}
+
+.yarn-card:hover{
+    background-size: 592px 469px;
 }
 
 .needle-card{
@@ -266,6 +272,12 @@ body{
     background: url("assets/needle_bg.png");
     grid-column: 1/15;
     grid-row: 15/24;
+    background-size: 557px 299px;
+    transition: background-size 1.2s;
+}
+
+.needle-card:hover{
+    background-size: 597px 339px;
 }
 
 .magazine-card{
@@ -274,7 +286,15 @@ body{
     background: url("assets/magazine_bg.png");
     grid-column: 15/31;
     grid-row: 1/17;
+    background-size: 393px 492px;
+    transition: background-size 1.2s;
 }
+
+.magazine-card:hover{
+    background-size: 433px 532px;
+}
+
+
 
 .second-block_link{
     width: 310px;
@@ -333,6 +353,10 @@ body{
     margin-bottom: 0;
 }
 
+.footer-nav_link:hover{
+    opacity: 70%;
+}
+
 .web-links{
     display: flex;
     justify-content: space-between;
@@ -348,6 +372,10 @@ body{
 
 .web-link:first-child{
     margin-left: 0;
+}
+
+.web-link:hover{
+    opacity: 70%;
 }
 
 #twitter{
