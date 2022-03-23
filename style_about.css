@@ -123,7 +123,6 @@ body{
 
 .active{
     color: #A67F50;
-
 }
 
 .header-nav_link:hover,
@@ -271,6 +270,11 @@ span{
 
 .comment-text{
     margin-top: 8px;
+}
+
+.profile-info .date-of-comment{
+    font-size: 1.25rem;
+    color:rgba(0, 0, 0, 0.62);
 }
 
 

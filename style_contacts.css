@@ -170,14 +170,14 @@ body{
     width: 557px;
     height: 55px;
     border: 2px solid #FFFFFF;
-    background: 0;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 #textarea{
     width: 558px;
     height: 150px;
     border: 2px solid #FFFFFF;
-    background: 0;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .main-form button{
@@ -189,6 +189,12 @@ body{
     font-family: "PT Sans",sans-serif;
     font-size: 1.5rem;
     color: #fff;
+    margin-right: 25px;
+}
+
+.main-form button:hover{
+    cursor: grab;
+    opacity: 50%;
 }
 
 .main-content{
