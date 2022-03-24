@@ -106,6 +106,10 @@ body{
     margin-left: 6px;
 }
 
+.header-logo_link:hover {
+    opacity: 70%;
+}
+
 .header-nav{
     width: 51%;
     display: flex;
@@ -371,6 +375,7 @@ span{
 .footer-logo_link:hover,
 .footer-logo_link:active{
     cursor: grab;
+    opacity:70%
 }
 
 .add-inf{

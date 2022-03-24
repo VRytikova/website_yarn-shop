@@ -138,103 +138,42 @@ body{
 /*HEADER END*/
 
 /*MAIN*/
-
 .main{
+    width:75%;
+    margin: 61px auto 100px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-}
-
-.filters{
-    width: 28.4%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    font: 1.7rem "PT Sans", sans-serif;
-    padding-left: 6%;
-    /*background: rgba(242, 207, 165, 0.25);*/
-    position: sticky;
-    left: 0;
-    top: 117px;
-}
-
-.filters label{
-    margin-bottom: 20px;
-}
-
-.yarn-brands label:first-child{
-    margin-bottom: 10px;
-}
-
-.yarn-brands{
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    margin-left: 31px;
-}
-
-
-.cards{
-    margin-right: 80px;
-    width: 71.6%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    /*height: 10.4%;*/
-    margin-bottom: 51px;
-    /*position: relative;*/
 }
 
-.card:hover img{
-    opacity: 30%;
+.product-img{
+    width: 51.43%;
 }
 
-.card:hover .add-to-basket{
-    visibility: visible;
-    opacity: 100%;
+.inf-title{
+    font: 2.2rem "PT Serif", serif;
+    margin-bottom: 35px;
 }
 
-.add-to-basket{
-    width: 65px;
-    height: 65px;
-    background: url("assets/basket.svg");
-    border-radius: 50%;
-    position: absolute;
-    visibility: hidden;
-    transition: visibility ease-in-out;
+.product-inf{
+    width: 38.7%;
+    font: 1.3rem "PT Sans", sans-serif;
 }
 
-.add-to-basket:hover{
-    background: url("assets/basket-active.svg");
+.buy{
+    width: 63%;
+    height: 70px;
+    background: rgba(166, 127, 80, 0.7);
+    border: 0;
+    font: 2.2rem "PT Sans", sans-serif;
+    color: #fff;
+    margin-top: 54px;
 }
 
-.brand{
-    margin: 20px 0 0;
-    font: 1.5rem "PT Sans",sans-serif;
-    color: #5D5D5D;
-    line-height: 28.13px;
-    text-decoration: none;
-}
-
-.model,
-.price{
-    margin: 0;
-    font:1.5rem "PT Sans",sans-serif;
+.buy:hover{
+    background: rgba(96, 144, 166, 0.5);
     color: #000;
-    line-height: 31px;
-    text-decoration: none;
-}
-
-.card:hover .brand,
-.card:hover .model{
-    color: #6090A6;
+    cursor: grab;
 }
 
 /*MAIN END*/

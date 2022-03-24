@@ -105,6 +105,10 @@ body{
     margin-left: 6px;
 }
 
+.header-logo_link:hover {
+    opacity: 70%;
+}
+
 .header-nav{
     width: 51%;
     display: flex;
@@ -334,6 +338,7 @@ body{
     height: 53.57px;
 }
 
+
 .footer-logo{
     width: 150px;
     height: 53.57px;
@@ -342,6 +347,7 @@ body{
 .footer-logo_link:hover,
 .footer-logo_link:active{
     cursor: grab;
+    opacity: 70%;
 }
 
 .add-inf{
