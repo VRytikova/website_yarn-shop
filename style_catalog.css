@@ -173,6 +173,10 @@ body{
     margin-left: 31px;
 }
 
+.disappear{
+    display: none;
+}
+
 
 .cards{
     margin-right: 80px;
@@ -190,6 +194,10 @@ body{
     /*height: 10.4%;*/
     margin-bottom: 51px;
     /*position: relative;*/
+}
+
+.use-filter{
+    display: none;
 }
 
 .card:hover img{

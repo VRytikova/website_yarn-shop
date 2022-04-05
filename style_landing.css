@@ -230,7 +230,8 @@ body{
 
 .aside-form_button:hover{
     cursor: grab;
-    opacity: 70%;
+    background: #6090A6;
+    color: #fff;
 }
 
 #enter{

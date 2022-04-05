@@ -22,233 +22,233 @@
 
    <main class="main">
        <aside class="filters">
-           <label>
-               <input type="radio" name="filter" value="all">Все категории
+           <label data-value="all">
+               <input type="radio" name="filter" data-value="all">Все категории
            </label>
-           <label>
-           <input type="radio" name="filter" value="yarn">Пряжа
+           <label data-value="yarn">
+           <input type="radio" name="filter" data-value="yarn">Пряжа
            </label>
-           <div class="yarn-brands">
+           <div class="yarn-brands disappear">
                <label>
-               <input type="checkbox" value="lana">Lana Grossa
+               <input type="checkbox" data-value="lana">Lana Grossa
                </label>
                <label>
-               <input type="checkbox" value="sandnes">Sandnes Garn
+               <input type="checkbox" data-value="sandnes">Sandnes Garn
                </label>
            </div>
-           <label>
-           <input type="radio" name="filter" value="magazine">Журналы
+           <label data-value="magazine">
+           <input type="radio" name="filter" data-value="magazine">Журналы
            </label>
-           <label>
-           <input type="radio" name="filter" value="needle">Спицы
+           <label data-value="needle">
+           <input type="radio" name="filter" data-value="needle">Спицы
            </label>
        </aside>
 
        <section class="cards">
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/alpaka-grey.png" alt="Alpakka" class="yarn-img sandnes-garn">
                <a class="brand" href="product-card.html">Sandnes Garn</a>
                <a class="model" href="product-card.html">Alpaka Slike</a>
                <p class="price">17 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/alpaka-purple.png" alt="Alpakka" class="yarn-img sandnes-garn">
                <p class="brand">Sandnes Garn</p>
                <p class="model">Alpaka Slike</p>
                <p class="price">17 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/sisu-red.png" alt="Sisu" class="yarn-img sandnes-garn">
                <p class="brand">Sandnes Garn</p>
                <p class="model">Sisu</p>
                <p class="price">8 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/linea-brown.png" alt="Linea Pura" class="yarn-img lana-grossa">
                <p class="brand">Lana Grossa</p>
                <p class="model">Linea Pura</p>
                <p class="price">19 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/mandarin-pink.png" alt="Mandarin" class="yarn-img sandnes-garn">
                <p class="brand">Sandnes Garn</p>
                <p class="model">Mandarin Naturell</p>
                <p class="price">12 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/linea-green.png" alt="Linea Pura" class="yarn-img lana-grossa">
                <p class="brand">Lana Grossa</p>
                <p class="model">Linea Pura</p>
                <p class="price">19 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/brillino-gold.png" alt="Brillino" class="yarn-img lana-grossa">
                <p class="brand">Lana Grossa</p>
                <p class="model">Brillino</p>
                <p class="price">15 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/brillino-white.png" alt="Brillino" class="yarn-img lana-grossa">
                <p class="brand">Lana Grossa</p>
                <p class="model">Brillino</p>
                <p class="price">15 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/mohair.png" alt="Mohair" class="yarn-img lana-grossa">
                <p class="brand">Lana Grossa</p>
                <p class="model">Mohair Nuovo</p>
                <p class="price">18 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/cw-alpaka-purple.png" alt="Cool Wool Alpaca" class="yarn-img lana-grossa">
                <p class="brand">Lana Grossa</p>
                <p class="model">Cool Wool Alpaca</p>
                <p class="price">22 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/cw-alpaka-grey.png" alt="Cool Wool Alpaca" class="yarn-img lana-grossa">
                <p class="brand">Lana Grossa</p>
                <p class="model">Cool Wool Alpaca</p>
                <p class="price">22 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/cw-print-rainbow.png" alt="Cool Wool Print" class="yarn-img lana-grossa">
                <p class="brand">Lana Grossa</p>
                <p class="model">Cool Wool Print</p>
                <p class="price">23 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/cw-print-winter.png" alt="Cool Wool Print" class="yarn-img lana-grossa">
                <p class="brand">Lana Grossa</p>
                <p class="model">Cool Wool Print</p>
                <p class="price">23 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/cw-print-pinky.png" alt="Cool Wool Print" class="yarn-img lana-grossa">
                <p class="brand">Lana Grossa</p>
                <p class="model">Cool Wool Print</p>
                <p class="price">23 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="needle">
                <img src="assets/catalog/lana-needle-round.png" alt="Needles" class="needle-img">
                <p class="brand">Круговые спицы</p>
                <p class="model">Lana Grossa</p>
                <p class="price">20 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="needle">
                <img src="assets/catalog/lana-needle.png" alt="Needles" class="needle-img">
                <p class="brand">Разъемные спицы</p>
                <p class="model">Lana Grossa</p>
                <p class="price">19 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="needle">
                <img src="assets/catalog/prym-needle-round.png" alt="Needles" class="needle-img">
                <p class="brand">Круговые спицы</p>
                <p class="model">PRYM</p>
                <p class="price">14,6 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="needle">
                <img src="assets/catalog/lana-needle-socks.png" alt="Needles" class="needle-img">
                <p class="brand">Чулочные спицы</p>
                <p class="model">Lala Berlin</p>
                <p class="price">20,5 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="magazine">
                <img src="assets/catalog/magazine-lp-17.png" alt="Magazine" class="magazin-img">
                <p class="brand">Журнал</p>
                <p class="model">Linea Pura SS2017</p>
                <p class="price">28 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="magazine">
                <img src="assets/catalog/magazine-filaty-60.png" alt="Magazine" class="magazin-img">
                <p class="brand">Журнал</p>
                <p class="model">Filati NO.60</p>
                <p class="price">29 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="magazine">
                <img src="assets/catalog/magazine-filaty-57.png" alt="Magazine" class="magazin-img">
                <p class="brand">Журнал</p>
                <p class="model">Filati NO.57</p>
                <p class="price">31 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="magazine">
                <img src="assets/catalog/magazine-lp-21.png" alt="Magazine" class="magazin-img">
                <p class="brand">Журнал</p>
                <p class="model">Linea Pura SS2021</p>
                <p class="price">22 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="magazine">
                <img src="assets/catalog/magazine-filaty-61.png" alt="Magazine" class="magazin-img">
                <p class="brand">Журнал</p>
                <p class="model">Filati NO.61</p>
                <p class="price">31 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="needle">
                <img src="assets/catalog/lana-needle-socks-2.png" alt="Needles" class="needle-img">
                <p class="brand">Чулочные спицы</p>
                <p class="model">Lana Grossa</p>
                <p class="price">20,5 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/cw-print-grass.png" alt="Cool Wool Print" class="yarn-img lana-grossa">
                <p class="brand">Lana Grossa</p>
                <p class="model">Cool Wool Print</p>
                <p class="price">23 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/linea-blue.png" alt="Linea Pura" class="yarn-img lana-grossa">
                <p class="brand">Lana Grossa</p>
                <p class="model">Linea Pura</p>
                <p class="price">19 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/alpaka-green.png" alt="Alpakka" class="yarn-img sandnes-garn">
                <p class="brand">Sandnes Garn</p>
                <p class="model">Alpaka Slike</p>
                <p class="price">17 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="needle">
                <img src="assets/catalog/lana-needle-2.png" alt="Needles" class="needle-img">
                <p class="brand">Прямые спицы</p>
                <p class="model">Lana Grossa</p>
                <p class="price">19,5 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/cw-alpaca-blue.png" alt="Cool Wool Alpaca" class="yarn-img lana-grossa">
                <p class="brand">Lana Grossa</p>
                <p class="model">Cool Wool Alpaca</p>
                <p class="price">22 BYN</p>
                <a href="#" onclick="return false" class="add-to-basket"></a>
            </div>
-           <div class="card">
+           <div class="card" data-filter="yarn">
                <img src="assets/catalog/tynn.png" alt="Cool Wool Alpaca" class="yarn-img sandnes-garn">
                <p class="brand">Sandnes Garn</p>
                <p class="model">Tynn Line</p>
@@ -284,6 +284,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script_catalog.js"></script>
 
 </body>
 </html>
