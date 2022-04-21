@@ -112,7 +112,7 @@ body{
     left: 40px;
     top:10px;
     width: 300px;
-    height: 300px;
+    height: 200px;
     border-radius:10px;
     background: #F4F1EE;
 
@@ -127,7 +127,7 @@ body{
     text-decoration: none;
     font: 1.5em "PT Sans Bold", sans-serif;
     color: #000;
-    margin: 40px 0 10px 40px;
+    margin: 10px 0 10px 40px;
 }
 
 .burger-link:active{
