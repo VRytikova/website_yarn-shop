@@ -102,6 +102,37 @@ body{
     display: none;
 }
 
+.burger-menu{
+    display: none;
+}
+
+.burger-menu{
+    position: absolute;
+    left: 40px;
+    top:10px;
+    width: 300px;
+    height: 300px;
+    border-radius:10px;
+    background: #F4F1EE;
+
+}
+
+.burger-active{
+    display: flex;
+    flex-direction: column;
+}
+
+.burger-link{
+    text-decoration: none;
+    font: 1.5em "PT Sans Bold", sans-serif;
+    color: #000;
+    margin: 40px 0 10px 40px;
+}
+
+.burger-link:active{
+    color: #6090A6;
+}
+
 .header-logo{
     width: 100%;
     height: 57px;
@@ -461,6 +492,7 @@ body{
     .basket-link{
         display: block;
     }
+
 
     .header-nav{
         display: none;
