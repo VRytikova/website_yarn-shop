@@ -76,7 +76,7 @@ body{
 }
 
 .content-wrapper{
-    margin: 0 80px;
+    margin: 0 5.715%;
 }
 
 
@@ -93,6 +93,13 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.burger{
+    background: url("assets/burger.svg") 26px 26px;
+    width: 26px;
+    height: 26px;
+    display: none;
 }
 
 .header-logo{
@@ -136,6 +143,12 @@ body{
     cursor: grab;
 }
 
+.basket-link{
+    background: url("assets/basket-adaptive.svg") 26px 26px;
+    width: 26px;
+    height: 26px;
+    display: none;
+}
 /*HEADER END*/
 
 /*MAIN*/
@@ -153,7 +166,7 @@ body{
 }
 
 .main-form{
-    width: 630px;
+    width: 50.81%;
     height: 854px;
     background: #A67F50;
     display: flex;
@@ -202,7 +215,7 @@ body{
 }
 
 .main-content{
-    width: 630px;
+    width: 49.19%;
     height: 854px;
     display: flex;
     flex-direction: column;
@@ -235,10 +248,6 @@ body{
     height: 62px;
 }
 
-#email-contact{
-    font-weight: 400;
-    font-size: 24px;
-}
 
 #address-contact{
     width: 350px;
@@ -253,7 +262,10 @@ body{
     height: 427px;
 }
 
-
+.mobile-web-links,
+.mobile-form{
+    display: none;
+}
 /*END MAIN*/
 
 /*FOOTER*/
@@ -366,3 +378,122 @@ body{
 
 
 /*FOOTER END*/
+
+@media screen and (max-width: 600px) {
+    .header {
+        background: rgba(166, 127, 80, 0.2);
+        height: 46px;
+    }
+
+    .header-wrapper {
+        height: 46px;
+    }
+
+    .burger,
+    .basket-link {
+        display: block;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-logo_link {
+        width: 114px;
+        height: 27px;
+    }
+
+    .main{
+        margin-top: 10px;
+    }
+
+    .main-wrapper{
+        display: block;
+    }
+
+    .main-logo{
+        font: 1.4em "PT Sans Bold", sans-serif;
+    }
+
+    .main-content{
+        width: 100%;
+        max-height: 425px;
+        padding: 0;
+        font-size: 1em;
+    }
+
+    .info img{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    #phone-contact,
+    #email-contact{
+        width: 130px;
+        max-height: 42px;
+    }
+
+    #address-contact{
+        width: 234px;
+        max-height: 42px;
+    }
+
+    .map{
+        width: 335px;
+        height: 224px;
+    }
+
+    .mobile-web-links{
+        margin-top: 22px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-web-links a{
+        text-transform: uppercase;
+        font: 1em "PT Sans", sans-serif;
+        color: black;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    .mobile-form{
+        display:block;
+        margin-top: 27px;
+    }
+
+    .mobile-form_text{
+        font: 1em "PT Sans Bold";
+        text-align: center;
+        margin:0 0 10px 0;
+    }
+
+    .mobile-form input{
+        width:100%;
+        height: 36px;
+        border: 1px solid #000;
+        margin-bottom: 10px;
+    }
+
+    .mobile-form_buttons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .mobile-form_buttons button{
+        width: 155px;
+        height: 30px;
+        color: #fff;
+        background: #A67F50;
+        border:0;
+    }
+
+    .main-form,
+    .footer{
+        display: none;
+    }
+
+}

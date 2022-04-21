@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1, shrink-to-fit=no">
     <title>Contacts</title>
     <link rel="stylesheet" href="style_contacts.css">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
@@ -10,13 +11,21 @@
     <header class="header" id="header">
         <div class="content-wrapper">
             <div class="header-wrapper">
-                <a href="landing.html" class="header-logo_link"><img src="assets/logo.png" alt="YARNIE" class="header-logo"></a>
+                <a href="#" onclick="return false" class="burger"></a>
+                <a href="landing.html" class="header-logo_link">
+                    <picture class="header-logo">
+                        <source media="(max-width: 600px)" srcset="assets/logo_mobile.png">
+                        <source media="(min-width: 601px)" srcset="assets/logo.png">
+                        <img src="assets/logo.png" alt="YARNIE" >
+                    </picture>
+                </a>
                 <nav class="header-nav">
                     <a href="catalog.html" class="header-nav_link">Каталог</a>
                     <a href="#" onclick="return false" class="header-nav_link">Корзина</a>
                     <a href="about.html" class="header-nav_link">О нас</a>
                     <a href="#" onclick="return false" class="header-nav_link active">Контакты</a>
                 </nav>
+                <a href="#" onclick="return false" class="basket-link"></a>
             </div>
         </div>
     </header>
@@ -70,6 +79,20 @@
                     </div>
                 </div>
             </div>
+            <div class="mobile-web-links">
+                <a href="#" onclick="return false">instagram <span>🠒</span></a>
+                <a href="#" onclick="return false">telegram <span>🠒</span></a>
+                <a href="#" onclick="return false">facebook <span>🠒</span></a>
+            </div>
+
+            <form action="" class="mobile-form">
+                <p class="mobile-form_text">Хотите получать первыми информацию о новых поставках? Оставьте свою почту в форме ниже</p>
+                <input type="email" class="leave-email">
+                <div class="mobile-form_buttons">
+                    <button type="submit">SUBMIT</button>
+                    <button type="reset">RESET</button>
+                </div>
+            </form>
         </div>
     </main>
 

@@ -77,7 +77,7 @@ body{
 }
 
 .content-wrapper{
-    margin: 0 80px;
+    margin: 0 5.715%;
 }
 
 
@@ -94,6 +94,13 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.burger{
+    background: url("assets/burger.svg") 26px 26px;
+    width: 26px;
+    height: 26px;
+    display: none;
 }
 
 .header-logo{
@@ -136,12 +143,18 @@ body{
     cursor: grab;
 }
 
+.basket-link{
+    background: url("assets/basket-adaptive.svg") 26px 26px;
+    width: 26px;
+    height: 26px;
+    display: none;
+}
 /*HEADER END*/
 
 /*MAIN*/
 .first-block{
     margin-top: 10px;
-    width: 581px;
+    width: 100%;
 }
 
 .first-block-wrapper{
@@ -151,10 +164,6 @@ body{
 }
 
 .about-pic{
-    /*width: 570px;
-    height: 452px;*/
-    width: 35.6em;
-    height: 28.3em;
     grid-column: 1/3;
     grid-row: 2/8;
     z-index: 1;
@@ -164,7 +173,7 @@ body{
     width: 964px;
     height: 581px;
     background: rgba(242, 207, 165, 0.5);
-    grid-column: 2/5;
+    grid-column: 3/6;
     grid-row: 1/9;
     padding: 81px 35px 81px 344px;
     display: flex;
@@ -203,6 +212,10 @@ span{
     font-family: "PT Serif Italic", serif;
     font-size: 2.1rem;
 
+}
+
+.mobile-web-block{
+    display: none;
 }
 
 .second-block{
@@ -245,8 +258,8 @@ span{
 }
 
 .card-comment{
-    width: 525px;
-    height: 216px;
+    width: 42.338%/*525px*/;
+    min-height: 216px;
     background: rgba(96, 144, 166, 0.5);
     display: flex;
     justify-content: space-between;
@@ -259,8 +272,7 @@ span{
 }
 
 .profile-info{
-    width: 317px;
-    height: 93px;
+    width: 68.172%;
 }
 
 .profile-info p{
@@ -394,3 +406,118 @@ span{
 
 
 /*FOOTER END*/
+
+@media screen and (max-width: 600px) {
+    .header {
+        background: rgba(166, 127, 80, 0.2);
+        height: 46px;
+    }
+
+    .header-wrapper {
+        height: 46px;
+    }
+
+    .burger,
+    .basket-link {
+        display: block;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-logo_link {
+        width: 114px;
+        height: 27px;
+    }
+
+    .first-block{
+        margin-top: 66px;
+    }
+
+    .first-block-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .text-bg{
+        margin-top: 10px;
+        background: 0;
+        width: 331px;
+        height: 213px;
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    .text-bg p{
+        font-size: 1rem;
+    }
+
+    .mobile-web-block{
+        display: block;
+        width:100%;
+        min-height: 91px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .mobile-block-title{
+        font: 1em "PT Sans Bold", sans-serif;
+        margin: 7px 0 10px;
+        text-align: center;
+    }
+
+    .mobile-web-links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 11.466%;
+    }
+
+    .second-block{
+        margin-top: 20px;
+    }
+
+    .second-block-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .second-title{
+        font: 1.4em "PT Sans Bold", sans-serif;
+        margin: 0 0 20px 0;
+    }
+
+    .card-comment{
+        width: 100%/*331px*/;
+        min-height: 139px;
+        padding: 10px 14px 14px 12px;
+        margin-bottom: 10px;
+    }
+
+    .profile-photo{
+        width: 45px;
+        height: 45px;
+    }
+
+    .profile-info{
+        width: 81.311%;
+    }
+
+    .profile-info p{
+        font-size: 1em;
+    }
+
+    .profile-info .date-of-comment{
+        font-size: 0.75em;
+    }
+
+    .about-title,
+    .about-fact,
+    .pointer-left,
+    .pointer-right,
+    .footer{
+        display: none;
+    }
+}

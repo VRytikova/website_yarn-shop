@@ -95,6 +95,13 @@ body{
     align-items: center;
 }
 
+.burger{
+    background: url("assets/burger.svg") 26px 26px;
+    width: 26px;
+    height: 26px;
+    display: none;
+}
+
 .header-logo{
     width: 160px;
     height: 57px;
@@ -133,6 +140,13 @@ body{
 .header-nav_link:active{
     color:#A67F50;
     cursor: grab;
+}
+
+.basket-link{
+    background: url("assets/basket-adaptive.svg") 26px 26px;
+    width: 26px;
+    height: 26px;
+    display: none;
 }
 
 /*HEADER END*/

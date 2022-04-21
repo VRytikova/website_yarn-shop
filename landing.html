@@ -12,7 +12,13 @@
         <div class="content-wrapper">
             <div class="header-wrapper">
                 <a href="#" onclick="return false" class="burger"></a>
-                <a href="#header" class="header-logo_link"><img src="assets/logo.svg" alt="YARNIE" class="header-logo"></a>
+                <a href="landing.html" class="header-logo_link">
+                    <picture class="header-logo">
+                        <source media="(max-width: 600px)" srcset="assets/logo_mobile.png">
+                        <source media="(min-width: 601px)" srcset="assets/logo.png">
+                        <img src="assets/logo.png" alt="YARNIE" >
+                    </picture>
+                </a>
                 <nav class="header-nav">
                     <a href="catalog.html" class="header-nav_link">Каталог</a>
                     <a href="#" onclick="return false" class="header-nav_link">Корзина</a>
