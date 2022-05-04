@@ -114,7 +114,7 @@ body{
     height: 200px;
     border-radius:10px;
     background: #F4F1EE;
-
+    z-index: 3;
 }
 
 .burger-active{
