@@ -537,6 +537,7 @@ span{
 
     .slider-wrapper{
         width: 100%;
+        overflow-x: scroll;
     }
 
     .slider-container{
